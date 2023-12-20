@@ -1,0 +1,68 @@
+.NavigasiSosmed {
+    position: fixed;
+    width: 240px;
+    height: 64px;
+    z-index: 99;
+    left: 100px;
+    bottom: 10%;
+
+    background: #FFFFFF;
+    box-shadow: 10px 10px 40px rgba(45, 129, 255, 0.1);
+    border-radius: 100px;
+    animation: navsosmed 1.5s ease-in-out;
+    animation-delay: 1.9s;;
+}
+.NavigasiSosmed ul{
+    display: flex;
+    padding: 20px;
+    list-style: none;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.NavigasiSosmed ul li{
+    cursor: pointer;
+    
+}
+
+.NavigasiSosmed ul .changeColor {
+    transition: 350ms ease;
+    text-decoration: none;
+    color: #121926;
+}
+
+.NavigasiSosmed ul .changeColor:hover {
+    color: #2D81FF;
+    transition: 350ms ease;
+}
+
+@media (max-width: 414px){ 
+    .navigasicontainer{
+        width: 100%;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        bottom: 5%;
+    } 
+
+    .NavigasiSosmed {
+        position: relative;
+        left:0;
+        right:0;
+    }
+}
+
+@keyframes navsosmed {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    } 
+    50%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

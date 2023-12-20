@@ -1,0 +1,184 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  
+  .Header {
+      background-color: white;
+      border: 1px solid black;
+      height: 100vh;
+      overflow: hidden;
+  }
+  
+  .Header .container-fluid .col-sm-6 {
+      border: 0.1px solid black;
+      height: 100vh;
+  }
+  
+  .Header .container-fluid .navigasi{
+      width: 93%;
+      padding: 0;
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .Header .container-fluid .navigasi ul{
+      list-style: none;
+      padding: 0 200px 0 200px;
+      width: 100%;
+      position: relative;
+      z-index: 99999;
+  }
+  
+  .Header .container-fluid .navigasi ul li{
+      padding: 15px;
+      transition: 500ms ease;
+  }
+  
+  .Header .container-fluid .navigasi ul li:nth-child(1):hover{
+      background-color: #FCCF02;
+      padding-left: 50px;
+      transition: 500ms ease;
+  }
+  
+  .Header .container-fluid .navigasi ul li:nth-child(2):hover{
+      background-color: #FCCF02;
+      padding-left: 50px;
+      transition: 500ms ease;
+  }
+  
+  .Header .container-fluid .navigasi ul li:nth-child(3):hover{
+      background-color: #FCCF02;
+      padding-left: 50px;
+      transition: 500ms ease;
+  }
+  
+  .Header .container-fluid .navigasi ul li:nth-child(4):hover{
+      background-color: #FCCF02;
+      padding-left: 50px;
+      transition: 500ms ease;
+  }
+  
+  .Header .container-fluid .navigasi ul li:nth-child(2):hover{
+      background-color: #FCCF02;
+      transition: 500ms ease;
+  }
+  .Header .container-fluid .navigasi ul li:nth-child(3):hover{
+      background-color: #FCCF02;
+      transition: 500ms ease;
+  }
+  .Header .container-fluid .navigasi ul li:nth-child(4):hover{
+      background-color: #FCCF02;
+      transition: 500ms ease;
+  }
+  
+  .Header .container-fluid .navigasi ul .sosial{  
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .Header .container-fluid .navigasi ul .footer{  
+      padding-top: 10px;
+      padding-bottom: 0;
+      height: 100%;
+      padding-right: 20%;
+  }
+  
+  .Header .container-fluid .navigasi .img1{  
+      position: absolute;
+      right: -7%;
+      width: 220px;
+      z-index: 0;
+      bottom: -10%;
+  }
+  
+  .Header .container-fluid .navigasi .img2{  
+      position: absolute;
+      right: 5%;
+      width: 120px;
+      z-index: 0;
+      top: 5%;
+  }
+
+  .Header .container-fluid .navigasi .img3{  
+    position: absolute;
+    right: 10%;
+    width: 80px;
+    z-index: 0;
+    top: 40%;
+  }
+
+  .Header .container-fluid .navigasi .img4{  
+    position: absolute;
+    left: 5%;
+    width: 40px;
+    z-index: 0;
+    top: 10%;
+  }
+
+  .Header .container-fluid .navigasi .img5{  
+    position: absolute;
+    left: 3%;
+    width: 80px;
+    z-index: 0;
+    bottom: 10%;
+  }
+  
+  .Header .container-fluid .navigasi ul .footer p{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 2em;
+  }
+
+  
+  
+  .Header .container-fluid .navigasi ul li h1{
+      font-weight: 700;
+      font-size: 64px;
+      text-transform: uppercase;
+      letter-spacing: 0.4em;
+  }
+  
+  .Header .container-fluid .button{
+      width: 7%;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+      position: fixed;
+      background-color: white;
+      right: 0%;
+  }
+  
+  .Header .container-fluid .button .icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      cursor: pointer;
+      transition: ease 500ms;
+  }
+
+  .Header .container-fluid .button .icon:hover span:nth-child(1){
+    transition: ease 500ms;
+    transform: rotate(42deg);
+    margin-right: -6px;
+  }
+
+  .Header .container-fluid .button .icon:hover span:nth-child(2){
+    transition: ease 500ms;
+    transform: rotate(-42deg);
+  }
+  
+  .Header .container-fluid .button span{
+      display: block;
+      width: 5px;
+      height: 50px;
+      background-color: #2a2a2a;
+      margin: 5px;
+      border-radius: 100px;
+      transition: ease 500ms;
+  }

@@ -1,0 +1,161 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 30px;
+    gap: 30px;
+    width: 384px;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 30px 30px 65px rgba(0, 96, 240, 0.1);
+    border-radius: 30px;
+    border-color: white;
+}
+
+.card .img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 344px;
+    height: 198px;
+
+    background: #FFF2DF;
+    border-radius: 20px;
+    transition: transform 2s ease-in-out;
+}
+
+.card .img img{
+    animation: turun-naik 15s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes turun-naik{
+    0% {
+        transform: translateY(0);
+        transform: rotate3d(0deg);
+    }
+    25% {
+        transform: translateY(-10%);
+        transform: rotate3d()(10deg);
+    } 50%{
+        transform: translateY(10%);
+        transform: rotate3d(0deg);
+    } 75% {
+        transform: translateY(-10%);
+        transform: rotate3d(-10deg);
+    } 100%{
+        transform: translateY(0%);
+        transform: rotate3d(0deg);
+    }
+}
+
+.card .img img{
+    transition: 300ms ease-in-out;
+}
+
+.card .img img:hover{
+    transition:  300ms ease-in-out;
+    width: 350px;
+}
+
+
+.card .text{
+    
+}
+
+.card .text h5{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+
+    letter-spacing: -0.05em;
+
+    /* typho */
+
+    color: #121926;
+}
+
+.card .text p{
+    width: 324px;
+    height: 210px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    /* or 219% */
+
+    text-align: center;
+
+    /* paragraph */
+
+    color: #444444;
+
+}
+
+.card .text p span{
+    font-weight: 700;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 35px;
+    /* or 219% */
+
+    text-align: center;
+
+    /* primary */
+
+    color: #2D81FF;
+}
+
+@media (max-width: 1024px){ 
+    .section2 {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 768px){ 
+    
+}
+
+@media (max-width: 414px){ 
+    .card .text h5{
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        width: 100%;
+    }
+
+    .card .text p{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    .card .img{
+        width: 100%;
+        height: 198px;
+    }
+
+    .card .img{
+        width: 100%;
+        height: 198px;
+    }
+    .card {
+        width: 92%;
+        height: 100%;
+        padding-bottom: 0;
+    }
+
+    
+}

@@ -1,0 +1,313 @@
+.section1 {
+    padding: 100px 100px;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+}
+
+.section1 .container{
+    padding:0;
+    margin: 0;
+    width: 100%;
+}
+
+.section1 .container .row .col-sm-12{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 15px;
+    
+}
+
+.section1 .container .row .col-sm-12 .text{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.section1 .container .row .col-sm-12 .text h1 {
+    width: 558px;
+    height: 156px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 78px;
+    text-align: center;
+    letter-spacing: -0.05em;
+
+    color: #121926;
+    animation: in 1.5s ease;
+    animation-delay: 2s;
+}
+
+.section1 .container .row .col-sm-12 .text .subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 35px;
+    /* identical to box height, or 109% */
+
+    text-align: center;
+
+    /* primary */
+
+    color: #2D81FF;
+    animation: in 1.5s ease;
+    animation-delay: 2s;
+}
+
+.section1 .container .row .col-sm-12 .text .sosmed {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    animation: in 1.5s ease;
+    animation-delay: 2s;
+}
+
+.section1 .container .row .col-sm-12 .text .sosmed a{
+    text-decoration: none;
+    color: #121926;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.section1 .container .row .col-sm-12 .text .sosmed li{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.section1 .container .row .col-sm-12 .text p {
+    width: 737px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+        text-align: center;
+
+
+    color: #444444;
+    animation: in 1.5s ease;
+    animation-delay: 2s;
+}
+
+.section1 .container .row .col-sm-12 .text p span{
+    color: #2D81FF;
+    font-weight: 700;
+}
+
+.section1 .container .row .col-sm-12 .text .button{
+    display: none;
+}
+
+.section1 .container .row .col-sm-12 img{
+    width: 839.76px;
+    height: 849.39px;
+    animation: in 1.5s ease;
+    animation-delay: 2s;
+}
+
+.section1 .container .row .col-sm-12 .helix{
+    width: 200px;
+    height: 200px;
+    left: 5%;
+    top: 7%;
+    position: absolute;
+    animation: turun-naik 10s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    z-index: 0;
+    
+}
+
+.section1 .container .row .col-sm-12 .cone{
+    width: 338.94px;
+    height: 338.94px;
+    left: 85.07%;
+    right: -0.69%;
+    top: 43.41%;
+    bottom: 27.19%;
+    position: absolute;
+    animation: turun-naik 10s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    z-index: 0;
+    
+}
+
+.section1 .container .row .col-sm-12 .thorus{
+    width: 289px;
+    height: 334.37px;
+    left: -1.67%;
+    right: 81.6%;
+    top: 40.07%;
+    bottom: 33.56%;
+    position: absolute;
+    animation: turun-naik 10s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    z-index: 0;
+}
+
+.section1 .container .row .col-sm-12 .cube{
+    width: 280px;
+    height: 280px;
+    left: 7.36%;
+    right: 73.54%;
+    top: 77.53%;
+    bottom: -0.11%;
+    position: absolute;
+    animation: turun-naik 10s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    z-index: 0;
+    
+}
+
+@media (max-width: 1024px){ 
+    .section1 .container .row .col-sm-12 .text .sosmed{
+        padding: 0px;
+    }
+}
+
+@media (max-width: 768px){ 
+    .section1 .container .row .col-sm-12 .text .button{
+        display: block;
+        animation: in 1.5s ease-in-out;
+        animation-delay: 2s;
+    }
+    .section1 .container .row .col-sm-12 .text .sosmed{
+        display: none;
+    }
+}
+    
+
+@media (max-width: 414px){ 
+    .section1{
+        padding: 85px 20px 20px;
+    }
+    .section1 .container{
+        padding: 0;
+        width: 100%;
+    }
+
+    .section1 .container .row .col-sm-12 .text h1 {
+        font-size: 36px;
+        line-height: 44px;
+        height: 100%;
+        width: 100%;
+        
+    }
+    .section1 .container .row .col-sm-12 .text .subtitle {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 35px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .section1 .container .row .col-sm-12 .text .sosmed{
+        display: none;
+    }
+
+    .section1 .container .row .col-sm-12 .text p{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 30px;
+        width: 100%;
+        padding: 0px 7px;
+        animation: in 1.5s ease-in-out;
+        animation-delay: 2s;
+    }
+    .section1 .container .row .col-sm-12 .text .button{
+        display: block;
+        animation: in 1.5s ease-in-out;
+        animation-delay: 2s;
+    }
+
+    .section1 .container .row .col-sm-12 img{
+        width: 541px;
+        height: 547.2px;
+        margin-top: 60px;
+        animation: in 1.5s ease-in-out;
+        animation-delay: 2s;
+    }
+
+    .section1 .container .row .col-sm-12 .helix{
+        width: 220px;
+        height: 220px;
+        left: -17%;
+        top: 30%;
+        animation: turun-naik 10s ease-in-out;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+    }
+    
+    .section1 .container .row .col-sm-12 .cone{
+        width: 180px;
+        height: 180px;
+        top: 70%;
+        left: 60%;
+        transform: rotate(-80.05deg);
+        animation: turun-naik 10s ease-in-out;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+
+    }
+    
+    .section1 .container .row .col-sm-12 .thorus{
+        width: 230px;
+        height: 230px;
+        top: 65%;
+        left: -8%;
+        animation: turun-naik 10s ease-in-out;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+    }
+    
+    .section1 .container .row .col-sm-12 .cube{
+        width: 100px;
+        height: 100px;
+        top: 34%;
+        left: 70%;
+        animation: turun-naik 10s ease-in-out;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+    }
+}
+
+@keyframes in {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    } 
+    50%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

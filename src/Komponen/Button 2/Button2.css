@@ -1,0 +1,40 @@
+.button2{
+    padding: 15px 50px;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #2D81FF;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 350ms ease-in-out;
+}
+
+.button2:hover{
+    background: #0139d4;
+    transition: 350ms ease-in-out;
+}
+
+.button2 h6{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;    
+    color: white;
+}
+
+@media (max-width: 414px){ 
+    .button2 {
+        padding: 10px 20px;
+        gap: 10px;
+
+        width: 150px;
+        height: 40px;
+    }
+    .button2 h6{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

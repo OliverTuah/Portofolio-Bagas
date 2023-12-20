@@ -1,0 +1,217 @@
+.section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    gap: 70px;
+    height: 100%;
+}
+
+.section3 .akademika{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 100%;
+}
+
+.section3 .akademika .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 10px;
+    width: 100%;
+}
+
+.section3 .akademika .header .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    margin-bottom: -20px;
+    height: 100%;
+    gap: 5px;
+    width: 789px;
+}
+
+.section3 .akademika .header .buttoncol{
+}
+
+.section3 .akademika .header .text h6{
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.05em;
+    color: #121926;
+}
+
+.section3 .akademika .header .text h2{
+    font-family: 'Montserrat';
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 59px;
+    /* identical to box height */
+
+    letter-spacing: -0.05em;
+
+    /* typho */
+
+    color: #121926;
+}
+
+.section3 .akademika .header .text p{
+    font-family: 'Montserrat';
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    line-height: 35px;
+    /* or 219% */
+
+
+    /* paragraph */
+
+    color: #444444;
+}
+
+.section3 .akademika .image{
+    width: 100%;
+    overflow: hidden;
+    background-color: #E4F7FF;
+    transition: 350ms ease;
+    border-radius: 34px;
+    height: 584px;
+    cursor: pointer;
+}
+
+.section3 .akademika .image img{
+    position: relative;
+    left: 0%;
+    width: 100%;
+    transition: 350ms ease;
+
+}
+
+.section3 .akademika .image:hover img{
+    width: 120%;
+    transition: 350ms ease;
+    position: relative;
+    left: -10%;
+    
+}
+
+@media (max-width: 1024px){ 
+    .section3 .akademika{
+    }
+    .section3 .akademika .header{
+        flex-wrap: wrap;
+    }
+    .section3 .akademika .image img{
+        position: relative;
+        width: 150%;
+        left: -25%;
+        top: 0%;
+        transition: 350ms ease;
+    }
+    .section3 .akademika .image img:hover{
+        position: relative;
+        width: 200%;
+        left: -50%;
+        top: 0%;
+        transition: 350ms ease;
+    }
+}
+
+@media (max-width: 768px){ 
+    .section3 {
+        padding: 50px;
+    }
+    .section3 .akademika .image img{
+        position: relative;
+        width: 240%;
+        left: -65%;
+        top: 0%;
+        transition: 350ms ease;
+    }
+    .section3 .akademika .image img:hover{
+        position: relative;
+        width: 280%;
+        left: -85%;
+        top: 0%;
+        transition: 350ms ease;
+    }
+}
+
+@media (max-width: 414px){ 
+    .section3 {
+        overflow: hidden;
+        padding: 0px 20px 20px;
+        gap: 40px;
+    }
+    
+    .section3 .akademika .header{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .section3 .akademika .header .text{
+        width: 100%;
+    }
+
+    .section3 .akademika .header .text h2{
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;      
+    }
+    
+    .section3 .akademika .header .text p{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 30px;
+    }
+    .section3 .akademika .header .buttoncol{
+        width: 100%;
+        padding: 20px 0px;
+        margin: 0;
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    .section3 .akademika .image{
+        padding: 100px 10px 10px;
+        gap: 10px;
+        width: 100%;
+        border-radius: 20px;
+        height: 243px;
+    }
+
+    .section3 .akademika .image img{
+        position: relative;
+        width: 200%;
+        left: -50%;
+        top: -80%;
+        transition: 350ms ease;
+    }
+
+    .section3 .akademika .image:hover img{
+        width: 250%;
+        transition: 350ms ease;
+        position: relative;
+        left: -70%;
+        top: -100%;
+        
+    }
+
+}

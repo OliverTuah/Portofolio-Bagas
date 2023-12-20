@@ -1,0 +1,217 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 100px;
+    gap: 85px;
+}
+
+.footer .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 40%;
+}
+
+.footer .logo h4{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    text-align: left;
+    line-height: 39px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: -0.05em;
+
+    color: #121926;
+}
+
+.footer .logo p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: left;
+    /* or 219% */
+
+
+    /* paragraph */
+
+    color: #444444;
+}
+
+.footer .informasi{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+}
+
+.footer .informasi .kol3{
+    width: 100%;
+    height: 100%;
+}
+
+.footer .informasi .kol3 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0px;
+    gap: 20px;
+}
+
+.footer .informasi .kol3 ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+}
+
+.footer .informasi .kol3 h6{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    text-align: left;
+
+    color: #121926;
+
+}
+
+.footer .informasi .kol3 ul a{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* paragraph */
+
+    color: #444444;
+}
+
+@media (max-width: 1024px){ 
+    
+    .footer {
+        flex-wrap: wrap;
+        padding: 100px 180px;
+        gap: 30px;
+    }
+    .footer .logo{
+        width: 100%;
+    }
+    .footer .informasi{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){ 
+    .footer {
+        flex-wrap: wrap;
+        padding: 50px;
+        gap: 30px;
+    }
+    .footer .logo{
+        width: 100%;
+    }
+    .footer .informasi{
+        width: 100%;
+    }
+}
+
+@media (max-width: 414px){ 
+    .footer {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 60px 20px;
+        gap: 20px;
+    }
+    .footer .logo{
+        width: 100%;
+        gap: 0px;
+    }
+    .footer .logo h4{
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        width: 100%;
+    }
+    .footer .logo p{
+        width: 100%;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .footer .informasi{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 0px;
+        gap: 0px;
+        width: 100%;
+    }
+    .footer .informasi .kol3:nth-child(1){
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .informasi .kol3:nth-child(2){
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .footer .informasi .kol3 h6{
+        text-align: center;
+    }
+
+    .footer .informasi .kol3 ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .informasi .kol3:nth-child(3){
+        padding-top: 10px;
+        display: none;
+    }
+
+    .footer .informasi .kol3:nth-child(3) ul{
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+        align-items: center;
+        overflow: scroll;
+    }
+
+    .footer .informasi .kol3:nth-child(3) ul li{
+        width: 100%;
+    }
+}
